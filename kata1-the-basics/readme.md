@@ -46,18 +46,30 @@ One the dvd rental database has been loaded you can start to run the next querie
 
 ### Step1: Describe Commands
 
-Get a list of the tables in the database.
+# Get a list of the tables in the database.
 
+SELECT *
+FROM customer
 
 ### Step2: Select
 
-Get a list of actors with the first name Julia.
+# Get a list of actors with the first name Julia.
 
-Get a list of actors with the first name Chris, Cameron, or Cuba.
+SELECT*
+FROM actor
+WHERE first_name="Julia"
 
-Select the row from customer for customer named Jamie Rice.
+# Get a list of actors with the first name Chris, Cameron, or Cuba.
 
-Select amount and payment_date from payment where the amount paid was less than $1.
+SELECT*
+FROM actor
+WHERE
+first_name='Chris' OR first_name='Cameron' OR first_event='Cuba'
+
+# Select the row from customer for customer named Jamie Rice.
+
+
+# Select amount and payment_date from payment where the amount paid was less than $1.
 
 ### Step3: Distinct
 
